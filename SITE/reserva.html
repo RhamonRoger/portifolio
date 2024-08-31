@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Formulário de Reserva de Viagem Avançado</h2>
+    <form method="GET" action="">
+    
+
+        <fieldset>
+
+            <Legend>Dados da Viagem</Legend>
+            <label>Nome</labeel><br>
+            <input type="text" name="nome"><br><br>
+
+            <label>Email</label><br>
+            <input type="email"  name="email"><br><br>
+
+        </fieldset> 
+    
+        <fieldset>
+            <Legend>Serviços Desejados</Legend>
+            <label>
+                <br><input type="checkbox" name="CompradePassagens" value="passagens">Compra de passagens
+            </label>
+            <label>
+                <br><input type="checkbox" name="reservaHospedagem" value="Hospedagem">Reserva de Hospedagem   
+            </label>
+            <label>
+                <br><input type="checkbox" name="aluguelVeiculos" value="Veículo">Aluguel de Veículo             
+            </label>                      
+        </fieldset>
+
+        <fieldset>
+            <Legend>Escolha a forma de pagamento</Legend>
+            <Label>
+                <br><input type="radio" name="formaPagamento" value="Cartão de Crédito"> cartão de crédito
+             </Label>
+             <label>
+                <br><input type="radio" name="formaPagamento" value="Boleto">Boleto
+             </label>
+             <label>
+                <br><input type="radio" name="formaPagamento"  value="Pix">Pix          
+             </label>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Escolha o prazo para pagamento</legend>
+            <select name="prazoPagamento">
+                <option value="aVista">A vista</option>
+                <option value="5x">5x sem juros</option>
+                <option value="10x" >10x com juros</option>
+
+            </select>   
+        </fieldset>
+
+        <label>Comentário</label><br><br>
+            <textarea rows="5" name="comentario"></textarea><br><br>
+
+        
+        <input type="submit" value="submit">
+
+    </form>
+
+</body>
+</html>

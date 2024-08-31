@@ -1,0 +1,14 @@
+var idade = 28;
+var experienciaAnos = 5;
+var nivelEducacao = "superior";
+var possuiCertificado = true;
+
+var idadeMinima = 18;
+var experienciaMinimaAnos = 3;
+var nivelEducacaoMinima = "superior";
+var certificadoObrigatorio = true;
+// Verificação de elegibilidade
+
+var elegivel =
+idade >= idadeMinima && (nivelEducacao == nivelEducacaoMinima|| possuiCertificado ) && (possuiCertificado || certificadoObrigatorioObrigatorio);
+console.log("Elegível para a vaga? " + elegivel);

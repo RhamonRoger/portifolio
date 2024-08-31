@@ -1,0 +1,56 @@
+const produtos = [
+    {id: 1, nome:'detergente' , valor: 2.00, categoria: 'Limpeza'},
+    {id: 2, nome:'amaciante' , valor: 6.50, categoria: 'Limpeza'},
+    {id: 3, nome:'pão' , valor: 2.00, categoria: 'alimento'},
+    {id: 4, nome:'queijo' , valor: 2.00, categoria: 'alimento'},
+    {id: 5, nome:'leite' , valor: 2.20, categoria: 'alimento'},
+];
+
+
+// Usando Filter e Map
+const alimentos = produtos.filter(p => p.categoria === 'alimento');
+
+
+console.log(alimentos);
+
+const alimentos1 = alimentos.map(function(name){
+    return name.nome
+});
+
+console.log(alimentos1);
+
+// outro array
+
+var funcionario = [
+    {nome: "Luiz", idade : 62},
+    {nome: "Davi", idade : 22},
+    {nome: "Arthur", idade : 18},
+    {nome: "Lucas", idade : 40},
+]
+
+//verificando pessoas listadas se possue 4 letras.
+
+var pessoasListagem = funcionario.filter(
+    function(valor){
+        return valor.nome.length < 5;
+
+})
+
+console.log(pessoasListagem.map(name=> name.nome));
+console.log(pessoasListagem);
+
+//Jeito diferente 
+
+const pessoasListagem1 =  pessoasListagem.map(function(name){
+    return name.nome;
+})
+
+console.log(pessoasListagem1);
+
+
+
+// Nome do array
+const pestsoasListagem = funcionario.map(function(name){
+    return name.nome;
+})
+console.log(pestsoasListagem);
